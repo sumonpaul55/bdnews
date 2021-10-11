@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- link for bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- tiny slider css cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Bdnews24.com</title>
+</head>
+<body>
+    <header class="">
+        <div class="container">
+            <div class="header-top border-top mt-2">
+                <nav class="navbar navbar-light navbar-expand-lg text-lg-center flex-column justify-content-center">
+                    <a href="index.html" class="navbar-brand m-0 p-0 nav-logo mb-2">
+                        <img src="img/logo1.png" width="80%" alt="">
+                    </a>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-menu"><span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="navbar-nav align-items-start collapse navbar-collapse" id="nav-menu">
+                        <li class="nav-item border-end"><a class="h-100 nav-link text-capitalize text-dark" href="#">news</a></li>
+                        <li class="nav-item border-end"><a class="h-100 nav-link text-capitalize text-dark" href="#">classified</a></li>
+                        <li class="nav-item border-end"><a class="h-100 nav-link text-capitalize text-dark" href="#">business</a></li>
+                        <li class="nav-item border-end"><a class="h-100 nav-link text-capitalize text-dark" href="#">opinion</a></li>
+                        <li class="nav-item border-end"><a class="h-100 nav-link text-capitalize text-dark" href="#">sport</a></li>
+                        <li class="nav-item border-end"><a class="h-100 nav-link text-capitalize text-dark" href="#">cricket</a></li>
+                        <li class="nav-item border-end"><a class="h-100 nav-link text-capitalize text-dark" href="#">tube</a></li>
+                        <li class="nav-item border-end"><a class="h-100 nav-link text-capitalize text-dark" href="#">turning point</a></li>
+                        <li class="nav-item border-end"><a class="h-100 nav-link text-capitalize text-dark" href="#">adv</a></li>
+                        <li class="nav-item ps-2 menubar"><img class="img-fluid inside-bar m-0 p-0 me-1" width="30%" src="img/bar.png" alt="menu">More</li>
+                        <li class="d-flex search-bar">
+                            <input class="form-control" type="text"><i class="fas fa-search text-white d-inline-block p-2 h-100"></i>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="logo-part py-4 d-flex justify-content-between align-items-center">
+                    <img src="img/logo1.png" class="img-fluid" alt="bdnews24.com">
+                    <div class="logo-social d-flex flex-column">
+                        <div class="social-icon d-flex align-items-center flex-wrap">
+                            <p class="mail text-white rounded fw-bold p-2 me-3 m-0"><i class="fab fa-twitter"></i> Follow @bdnews24.com</p>    
+                            <i class="fab fa-facebook-f p-2 text-white rounded"></i>
+                            <i class="fab fa-youtube p-2 text-white rounded ms-2 me-3 position-relative"></i>
+                            <i class="far fa-bell p-2 ms-3 text-white rounded"></i>
+                            <a class="p-2 ms-2 text-decoration-none logo-part-btn text-white" href="#">বাংলা সংস্করন</a>
+                        </div>
+                            <p class="current-date m-0 align-self-end">Saturday, September 25, 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="latest-part">
+        <div class="container">
+            <div class="border-top border-bottom custom-border py-2 d-flex align-items-center">
+                <span class="latest text-white p-2 text-uppercase">latest</span>
+                <marquee behavior="" direction="">
+                    <ul class="m-0 d-flex">
+                        <li class="mx-3"><a class="text-decoration-none" href="#">Sydney's unvaccinated warned of social isolation when COVID-19 lockdown ends</a></li>
+                        <li class="mx-3"><a class="text-decoration-none" href="#">Pentagon leaders to face Afghanistan reckoning in Congress</a></li>
+                        <li class="mx-3"><a class="text-decoration-none" href="#">Sydney's unvaccinated warned of social isolation when COVID-19 lockdown ends</a></li>
+                        <li class="mx-3"><a class="text-decoration-none" href="#">Pentagon leaders to face Afghanistan reckoning in Congress</a></li>
+                    </ul>
+                </marquee>
+            </div>
+        </div>
+    </div>
+    <!-- news content section start -->
+    <section class="news-content py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="news-img">
+                        <img class="m-0" src="img/bdnews.jpg" height="200" width="100%" alt="">
+                    </div>
+                    <h1 class="m-0 py-2"><a class="news-title text-decoration-none p-0" href="#">BTRC blocked bdnews24.com, other news websites</a></h1>
+                    <small class="py-2">The regulator was implementing a court order to shut unregistered websites</small>
+                    <div class="border-top more-news d-flex flex-column py-2">
+                        <div class="more-news-content d-flex py-1">
+                            <img class="img-fluid" src="img/quazi-ibrahim-280921-01.jpg" alt="quazi-ibrahim">
+                            <a class="fw-bold text-decoration-none ms-3" href="#">Police to seek remand for Kazi Ibrahim after arrest</a>
+                        </div>
+                        <div class="more-news-content d-flex py-1">
+                            <img class="img-fluid" src="img/reopening-mirpur-girls-ideal-school-120921-14.jpg" alt="quazi-ibrahim">
+                            <a class="fw-bold text-decoration-none ms-3" href="#">Dipu Moni sees no chance of holding JSC exams</a>
+                        </div>
+                    </div>
+                </div><!-- col-md-6 -->
+                <div class="col-md-3">
+                    <div class="other-stories">
+                        <h4 class="col-title text-uppercase text-white p-1">Other top stories</h4>
+                        <ul class="list-unstyled m-0">
+                            <li class="border-bottom border-2 py-2"><a class="text-decoration-none fw-bold" href="#">Police to seek remand for Kazi Ibrahim after arrest</a></li>
+                            <li class="border-bottom border-2 py-2"><a class="text-decoration-none fw-bold" href="#">Dipu Moni sees no chance of holding JSC exams</a></li>
+                            <li class="border-bottom border-2 py-2"><a class="text-decoration-none fw-bold" href="#">Dipu Moni sees no chance of holding JSC exams</a></li>
+                            <li class="border-bottom border-2 py-2"><a class="text-decoration-none fw-bold" href="#">New Taliban chancellor bars women from Kabul University</a></li>
+                            <li class="border-bottom border-2 py-2"><a class="text-decoration-none fw-bold" href="#">Daily count: 31 virus deaths, 1,310 cases</a></li>
+                            <li class="border-bottom border-2 py-2"><a class="text-decoration-none fw-bold" href="#">Man gets 60 years in jail over rape in Joypurhat</a></li>
+                            <li class="border-bottom border-2 py-2"><a class="text-decoration-none fw-bold" href="#">Dipu Moni sees no chance of holding JSC exams</a></li>
+                            <li class="border-bottom border-2 py-2"><a class="text-decoration-none fw-bold" href="#">India allows Novavax COVID vaccine trial on minors</a></li>
+                            <li class="border-bottom border-2 py-2"><a class="text-decoration-none fw-bold" href="#">HC extends Khaleda’sbail by a year</a></li>
+                        </ul>
+                        <h2 class="text-end"><a class="more-stories-btn text-decoration-none text-uppercase fw-bold" href="#">all latest stories</a><i class="fas fa-angle-double-right ms-2"></i></h2>
+                    </div>
+                </div><!-- col-md-3 -->
+                <div class="col-md-3">
+                    <div class="spotlight"> 
+                        <h4 class="col-title text-uppercase text-white p-1">spotlight</h4>
+                        <a class="p-0" href="#"><img class="img-fluid w-100" src="img/spotlight.jpg" alt=""></a>
+                        <a class="p-0 my-3 d-block text-decoration-none fw-bold" href="#">A Brexit-weary Britain finds itself in a new crisis</a>
+                        <small class="">The government has blamed problems like food shortages on the virus; with the pandemic waning, the focus in the fuel crisis is shifting to Britain’s exit from the EU</small>
+                        <button class="p-2 fw-bold btn custom-btn text-capitalize w-100 text-white">all buget stories</button>
+                    </div>
+                </div><!-- col-md-3 -->
+            </div>
+        </div>
+    </section>
+<section class="other-news py-5">
+    <div class="container">
+        <div class="row border-top border-4">
+            <div class="col-md-4 custom-border mt-3">     
+                <div class="other-news-main">
+                    <h4 class="col-title text-uppercase text-white p-2"><a class="p-0 text-white text-decoration-none" href="#">opinion</a>
+                    </h4>
+                    <div class="other-news-main-content">
+                        <a href="#" class="p-0 d-block w-100">
+                            <img class="img-fluid" src="img/col1.jpg" width="100%" alt="">
+                        </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">Instagram is adult entertainment</a>
+                        <p class="m-0">The rise of big tech and social media presents a series of difficult, perhaps intractable problems for Western societies</p>
+                    </div>
+                </div>
+            </div><!--col-md-4-->
+            <div class="col-md-4 px-lg-4 custom-border mt-3">    
+                <div class="other-news-main">
+                    <h4 class="col-title text-uppercase text-white p-2"><a href="#" class="p-0 text-white text-decoration-none">lifestyle</a></h4>
+                    <div class="other-news-main-content">
+                        <a href="#" class="p-0 d-block w-100">
+                            <img class="img-fluid" src="img/col2.jpg" width="100%" alt="">
+                        </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">Alaska celebrates Fat Bear Week</a>
+                        <p class="m-0">The rise of big tech and social media presents a series of difficult, perhaps intractable problems for Western societies</p>
+                    </div>
+                </div>
+            </div><!--col-md-4-->
+            <div class="col-md-4 custom-border mt-3">     
+                <div class="other-news-main">
+                    <h4 class="col-title text-uppercase text-white p-2"><a class="text-decoration-none text-white p-0" href="#">politics</a></h4>
+                    <div class="other-news-main-content">
+                        <a href="#" class="p-0 d-block w-100">
+                            <img class="img-fluid" src="img/col3.jpg" width="100%" alt="">
+                        </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">America’s top general back in the centre of a political battle</a>
+                        <p class="m-0">The rise of big tech and social media presents a series of difficult, perhaps intractable problems for Western societies</p>
+                    </div>
+                </div>
+                
+            </div><!--col-md-4-->
+        </div>
+        <div class="row border-top mt-4">
+            <div class="col-md-4 custom-border mt-3">     
+                <div class="other-news-main">
+                    <h4 class="col-title text-uppercase text-white p-2"><a class="p-0 text-white text-decoration-none" href="#">MIDDLE EAST</a></h4>
+                    <div class="other-news-main-content">
+                        <a href="#" class="p-0 d-block w-100">
+                            <img class="img-fluid" src="img/modle.jpg" width="100%" alt="">
+                        </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">Instagram is adult entertainment</a>
+                        <p class="m-0">The rise of big tech and social media presents a series of difficult, perhaps intractable problems for Western societies</p>
+                    </div>
+                </div>
+            </div><!--col-md-4-->
+            <div class="col-md-4 custom-border mt-3">    
+                <div class="other-news-main">
+                    <h4 class="col-title text-uppercase text-white p-2"><a class="p-0 text-white text-decoration-none" href="#">africa</a></h4>
+                    <div class="other-news-main-content">
+                        <a href="#" class="p-0 d-block w-100">
+                            <img class="img-fluid" src="img/africa.jpg" width="100%" alt="">
+                        </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">Alaska celebrates Fat Bear Week</a>
+                        <p class="m-0">The rise of big tech and social media presents a series of difficult, perhaps intractable problems for Western societies</p>
+                    </div>
+                </div>
+            </div><!--col-md-4-->
+            <div class="col-md-4 custom-border mt-3">     
+                <div class="other-news-main">
+                    <h4 class="col-title text-uppercase text-white p-2"><a class="p-0 text-white text-decoration-none" href="#">midea</a></h4>
+                    <div class="other-news-main-content">
+                        <a href="#" class="p-0 d-block w-100">
+                            <img class="img-fluid" src="img/media.jpg" width="100%" alt="">
+                        </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">America’s top general back in the centre of a political battle</a>
+                        <p class="m-0">The bill was submitted in August, but lawmakers postpone voting as no can agree on exactly how to stamp out ‘fake news’ in the media</p>
+                    </div>
+                </div>
+            </div><!--col-md-4-->
+        </div><!--row-->
+        <div class="row border-top mt-4">
+            <div class="col-md-4 custom-border mt-3">     
+                <div class="other-news-main">
+                    <h4 class="col-title text-uppercase text-white p-2"><a class="p-0 text-white text-decoration-none" href="#">economy</a></h4>
+                    <div class="other-news-main-content">
+                        <a href="#" class="p-0 d-block w-100">
+                            <img class="img-fluid" src="img/economy.jpg" width="100%" alt="">
+                        </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">Instagram is adult entertainment</a>
+                        <p class="m-0">The rise of big tech and social media presents a series of difficult, perhaps intractable problems for Western societies</p>
+                    </div>
+                </div>
+            </div><!--col-md-4-->
+            <div class="col-md-4 custom-border mt-3">    
+                <div class="other-news-main">
+                    <h4 class="col-title text-uppercase text-white p-2"><a class="p-0 text-white text-decoration-none" href="#">corona pandemic</a></h4>
+                    <div class="other-news-main-content">
+                        <a href="#" class="p-0 d-block w-100">
+                            <img class="img-fluid" src="img/corona.jpg" width="100%" alt="">
+                        </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">Alaska celebrates Fat Bear Week</a>
+                        <p class="m-0">The rise of big tech and social media presents a series of difficult, perhaps intractable problems for Western societies</p>
+                    </div>
+                </div>
+            </div><!--col-md-4-->
+            <div class="col-md-4 custom-border mt-3">     
+                <div class="other-news-main">
+                    <h4 class="col-title text-uppercase text-white p-2"><a class="p-0 text-white text-decoration-none" href="#">asia-pesific</a></h4>
+                    <div class="other-news-main-content">
+                        <a href="#" class="p-0 d-block w-100">
+                            <img class="img-fluid" src="img/asia-pesipic.jpg" width="100%" alt="">
+                        </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">America’s top general back in the centre of a political battle</a>
+                        <p class="m-0">The bill was submitted in August, but lawmakers postpone voting as no can agree on exactly how to stamp out ‘fake news’ in the media</p>
+                    </div>
+                </div>
+            </div><!--col-md-4-->
+        </div><!--row-->
+    </div><!--container-->
+</section>
+<!-- Latest photo section starts -->
+<section class="latest-photo">
+    <div class="container">
+        <div class="border-top border-4">
+            <div class="row mt-3">
+                <div class="col-md-6 ms-0">
+                    <h4 class="col-title text-uppercase text-white p-2 mt w-100"><a class="p-0 text-white text-decoration-none" href="#">latest photos</a></h4>
+                    <div class="latest-photo-slider overflow-hidden">
+                        <div class="slider">
+                            <img src="img/slider1.jpg" width="100%" alt="slider-images">
+                            <p class="lead">
+                                A long tailback of vehicles stretches from Bijoy Sarani traffic signal to Farmgate in Dhaka on Saturday, Oct 2, 2021. Photo: Mahmud Zaman Ovi
+                            </p>
+                        </div>
+                        <div class="slider">
+                            <img src="img/slider2.jpg" width="100%" alt="slider-images">
+                            <p class="lead">Desperate commuters scramble to get on a bus by risking their lives amid a shortage of public transport in Dhaka’s Farmgate on Saturday, Oct 2, 2021. Photo: Mahmud Zaman Ovi</p>
+                        </div>
+                        <div class="slider">
+                            <img src="img/slider3.jpg" width="100%" alt="slider-images">
+                            <p class="lead">Commuters wait for buses amid a shortage of public transport in Dhaka’s Farmgate on Saturday, Oct 2, 2021. Photo: Mahmud Zaman Ovi</p>
+                        </div>
+                        <div class="slider">
+                            <img src="img/slider4.jpg" width="100%" alt="slider-images">
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, ipsa reprehenderit! Aliquam quia assumenda accusamus eum.</p>
+                        </div>
+                        <div class="slider">
+                            <img src="img/slider5.jpg" width="100%" alt="slider-images">
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, inventore ullam! Corporis, assumenda odit.</p>
+                        </div>
+                        <div class="slider">
+                            <img src="img/slider6.jpg" width="100%" alt="slider-images">
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tenetur vero tempora obcaecati voluptatibus?</p>
+                        </div>
+                        <div class="slider">
+                            <img src="img/slider7.jpg" width="100%" alt="slider-images">
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quaerat. Porro dolorum facere maiores nam.</p>
+                        </div>
+                        <div class="slider">
+                            <img src="img/slider8.jpg" width="100%" alt="slider-images">
+                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid velit dignissimos nam!</p>
+                        </div>
+                    </div> 
+                    <div class="more-gallery">
+                        <h4 class="col-title text-uppercase text-white p-2 w-100 m-0"><a class="p-0 text-white text-decoration-none" href="#">more galleries</a></h4>
+                        <div class="gallery-content d-flex flex-sm-wrap flex-lg-nowrap">
+                            <div class="m-2">
+                                <img src="img/gallery1.jpg" width="100%" height="50" alt="more-gallery">
+                                <a href="#" class="d-block p-0 text-decoration-none">Jaywalking, illegal stoppage on flyover...</a>
+                            </div>
+                            <div class="m-2">
+                                <img src="img/gallery2.jpg" width="100%" height="50" alt="more-gallery">
+                                <a href="#" class="d-block p-0 text-decoration-none">Lorem ipsum dolor sit....</a>
+                            </div>
+                            <div class="m-2">
+                                <img src="img/gallery3.jpg" width="100%" height="50" alt="more-gallery">
+                                <a href="#" class="d-block p-0 text-decoration-none">Lorem, ipsum dolor lorem....</a>
+                            </div>
+                            <div class="m-2">
+                                <img src="img/gallery4.jpg" width="100%" height="50" alt="more-gallery">
+                                <a href="#" class="d-block p-0 text-decoration-none">Lorem ipsum dolor sit amet consectetur....</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-gallery mt-4">
+                        <h4 class="col-title text-uppercase text-white p-2 w-100 m-0"><a class="p-0 text-white text-decoration-none" href="#">big picture</a></h4>
+                        <div class="gallery-content d-flex flex-sm-wrap flex-lg-nowrap">
+                            <div class="m-2">
+                                <img src="img/gallery1.jpg" width="100%" alt="more-gallery">
+                                <a href="#" class="d-block p-0 text-decoration-none">Jaywalking, illegal stoppage on flyover...</a>
+                            </div>
+                            <div class="m-2">
+                                <img src="img/gallery2.jpg" width="100%" alt="more-gallery">
+                                <a href="#" class="d-block p-0 text-decoration-none">Lorem, ipsum lorem lorem ....</a>
+                            </div>
+                            <div class="m-2">
+                                <img src="img/gallery3.jpg" width="100%" alt="more-gallery">
+                                <a href="#" class="d-block p-0 text-decoration-none">Lorem ipsum dolor sit....</a>
+                            </div>
+                            <div class="m-2">
+                                <img src="img/gallery4.jpg" width="100%" alt="more-gallery">
+                                <a href="#" class="d-block p-0 text-decoration-none">Lorem, ipsum Lorem ipsum d.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <nav class="tab-div">
+                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                          <button class="nav-link active text-uppercase text-white me-2 fw-bold" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab">most read</button>
+                          <button class="nav-link text-white text-uppercase me-2 fw-bold" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab">recent stories</button>
+                          <button class="nav-link text-uppercase text-white fw-bold mt-sm-1" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab">most viewed</button>
+                        </div>
+                    </nav>
+                      <div class="tab-content mt-1 p-3" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"    aria-labelledby="nav-home-tab">
+                            <ul class="list-unstyled">
+                                <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Bangladesh telecom regulator to block fake, illegal handsets from Oct 1</a></li>
+                                <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Bangladesh cable operators shut broadcast of foreign TV channels with ads</a></li>
+                                <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Rabindra University suspends teacher Farhana Baten over forced haircut</a></li>
+                                <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">bKash cuts cash-out charge at ‘favourite’ agents</a></li>
+                                <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Jatiya Party Secretary General Ziauddin Bablu dies at 66</a></li>
+                                <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Family says ARSA killed Rohingya refugee leader Mohib Ullah</a></li>
+                                <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Man arrested over killing of Rohingya leader Mohib Ullah</a></li>
+                                <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Merck pill breakthrough raises hopes of preventing COVID deaths</a></li>
+                                <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                               <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                            </ul>
+                        </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel"aria-labelledby="nav-profile-tab">
+                                <ul class="list-unstyled">
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Pakistan in talks with Taliban militants, even as attacks ramp up</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Bangladesh cable operators shut broadcast of foreign TV channels with ads</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Pakistan in talks with Taliban militants, even as attacks ramp up</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">bKash cuts cash-out charge at ‘favourite’ agents</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Pakistan in talks with Taliban militants, even as attacks ramp up</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Family says ARSA killed Rohingya refugee leader Mohib Ullah</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Pakistan in talks with Taliban militants, even as attacks ramp up</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Merck pill breakthrough raises hopes of preventing COVID deaths</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Merck pill breakthrough raises hopes of preventing COVID deaths</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Merck pill breakthrough raises hopes of preventing COVID deaths</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel"aria-labelledby="nav-contact-tab">
+                                <ul class="list-unstyled">
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Bangladesh telecom regulator to block fake, illegal handsets from Oct 1</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Bangladesh cable operators shut broadcast of foreign TV channels with ads</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Rabindra University suspends teacher Farhana Baten over forced haircut</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">bKash cuts cash-out charge at ‘favourite’ agents</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Jatiya Party Secretary General Ziauddin Bablu dies at 66</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Family says ARSA killed Rohingya refugee leader Mohib Ullah</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Man arrested over killing of Rohingya leader Mohib Ullah</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Merck pill breakthrough raises hopes of preventing COVID deaths</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                    <li class="py-2"><a class="text-decoration-none p-0 fw-normal" href="#">Many senior citizens are deprived of care. What will happen to the youth when they age?</a></li>
+                                </ul>
+                            </div>
+                      </div>
+                </div>
+            </div><!--row-->
+        </div><!--border-div-->
+    </div><!--container-->
+</section>
+<section class="sports-business py-4">
+    <div class="container">
+        <div class="row border-top mt-4 border-4">
+            <div class="col-md-4"> 
+                <h4 class="col-title text-uppercase text-white p-2 w-100 m-0 mb-1 mt-3"><a class="p-0 text-white text-decoration-none" href="#">big picture</a></h4>
+                <div class="politics">
+                     <div class="other-news-main-content">
+                        <a href="#" class="p-0 d-block w-100">
+                            <img class="img-fluid" src="img/posilicts.jpg" width="100%" alt="">
+                        </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">Philippines' Duterte says daughter running for president in 2022</a>
+                        <p class="m-0">Sara Duterte-Carpio is currently mayor of Davao, the Philippines' third-largest city</p>
+                    </div>
+                    <ul class="list-unstyled">
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">JP Secretary General Ziauddin Bablu dies</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Afghan army collapse 'took us all by surprise': Lloyd Austin</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Hasina turn 74</a></li>
+                    </ul>
+                </div>
+            </div><!--col-md-3-->
+            <div class="col-md-3">
+                <ul class="list-unstyled news">
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">JP Secretary General Ziauddin Bablu dies Afghan army collapse</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Afghan army collapse 'took us all by surprise': Lloyd AustinAfghan army collapse</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                   <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                 </ul>
+                 <button class="p-2 fw-bold btn more-stories-btn text-capitalize w-100">all politics stories</button>
+            </div>
+            <div class="col-md-5">
+                <h4 class="col-title text-uppercase text-white p-2 w-100 m-0 mb-1 mt-3"><a class="p-0 text-white text-decoration-none" href="#">business</a></h4>
+                <div class="business politics">
+                    <a href="#" class="p-0 d-block w-100">
+                        <img src="img/business.jpg" width="100%" alt="business"><div class="other-news-main-content">
+                    </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">Afghan pavilion at Dubai world fair stays shut</a>
+                        <p class="m-0">Hours after the fair opened in Dubai, Afghanistan's exhibition remains closed to visitors in a sign of the challenges facing the country's new Taliban rulers</p>
+                    </div>
+                </div>
+                <ul class="list-unstyled politics">
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Reliance sets up a subsidiary in UAE for trading oil</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Foreign TV channels
+                        with ads taken off air</a></li>
+                    </ul>
+            </div><!--col-md-5-->
+        </div><!--row-->
+    </div>
+</section>
+
+<section class="sports-business py-4">
+    <div class="container">
+        <div class="row border-top mt-4 border-4">
+            <div class="col-md-4"> 
+                <h4 class="col-title text-uppercase text-white p-2 w-100 m-0 mb-1 mt-3"><a class="p-0 text-white text-decoration-none" href="#">sports</a></h4>
+                <div class="politics">
+                     <div class="other-news-main-content">
+                        <a href="#" class="p-0 d-block w-100">
+                            <img class="img-fluid" src="img/sports.jpg" width="100%" alt="">
+                        </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">Brighton held to draw by unimpressive Arsenal</a>
+                        <p class="m-0">The result sees Brighton rise to fifth in the table on 14 points after seven games, two behind leaders Chelsea</p>
+                    </div>
+                    <ul class="list-unstyled">
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">United frustrated by Everton in Old Trafford draw</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Afghan army collapse 'took us all by surprise': Lloyd Austin</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">United frustrated by Everton in Old Trafford draw</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Barca teenager Gavi gets shock Spain call up</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Afghan girls' football squad find new home</a></li>
+                    </ul>
+                </div>
+            </div><!--col-md-3-->
+            <div class="col-md-3">
+                <ul class="list-unstyled news">
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">JP Secretary General Ziauddin Bablu dies Afghan army collapse</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Afghan army collapse 'took us all by surprise': Lloyd AustinAfghan army collapse</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                   <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                 </ul>
+                 <button class="p-2 fw-bold btn more-stories-btn text-capitalize w-100">all sports stories</button>
+            </div>
+            <div class="col-md-5">
+                <h4 class="col-title text-uppercase text-white p-2 w-100 m-0 mb-1 mt-3"><a class="p-0 text-white text-decoration-none" href="#">world</a></h4>
+                <div class="business politics">
+                    <a href="#" class="p-0 d-block w-100">
+                        <img src="img/world.jpg" width="100%" alt="business"><div class="other-news-main-content">
+                    </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">No more uncontrolled immigration: Johnson</a>
+                        <p class="m-0">The British prime minister says he will not return to ‘uncontrolled immigration’ to solve fuel, gas and Christmas food crises</p>
+                    </div>
+                </div>
+                <ul class="list-unstyled politics">
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Afghanistan on verge of socio-economic collapse: top EU diplomat</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">8 die in plane crash outside Milan</a></li>
+                    </ul>
+            </div><!--col-md-5-->
+        </div><!--row-->
+        <div class="row border-top mt-4 border-4">
+            <div class="col-md-4"> 
+                <h4 class="col-title text-uppercase text-white p-2 w-100 m-0 mb-1 mt-3"><a class="p-0 text-white text-decoration-none" href="#">economy</a></h4>
+                <div class="politics">
+                     <div class="other-news-main-content">
+                        <a href="#" class="p-0 d-block w-100">
+                            <img class="img-fluid" src="img/economies.jpg" width="100%" alt="">
+                        </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">From chips to ships, shortages are making inflation stick</a>
+                        <p class="m-0">Soaring gas prices, staff shortages, a lack of ships -- price pressures globally may be picking up faster than anticipated</p>
+                    </div>
+                    <ul class="list-unstyled">
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">United frustrated by Everton in Old Trafford draw</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Afghan army collapse 'took us all by surprise': Lloyd Austin</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">United frustrated by Everton in Old Trafford draw</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Barca teenager Gavi gets shock Spain call up</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Afghan girls' football squad find new home</a></li>
+                    </ul>
+                </div>
+            </div><!--col-md-3-->
+            <div class="col-md-3">
+                <ul class="list-unstyled news">
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">JP Secretary General Ziauddin Bablu dies Afghan army collapse</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Afghan army collapse 'took us all by surprise': Lloyd AustinAfghan army collapse</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                   <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                   <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                   <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">America’s top general back in the centre of a Afghan army collapse political battle</a></li>
+                 </ul>
+                 <button class="p-2 fw-bold btn more-stories-btn text-capitalize w-100">all economy stories</button>
+            </div>
+            <div class="col-md-5">
+                <h4 class="col-title text-uppercase text-white p-2 w-100 m-0 mb-1 mt-3"><a class="p-0 text-white text-decoration-none" href="#">entertainment</a></h4>
+                <div class="business politics">
+                    <a href="#" class="p-0 d-block w-100">
+                        <img src="img/entertain.jpg" width="100%" alt="business"><div class="other-news-main-content">
+                    </a>
+                        <a class="p-0 text-decoration-none fw-bold py-2 d-block" href="#">S Korea firm sues Netflix over ‘Squid Game’</a>
+                        <p class="m-0">The broadband firm demands payment for costs from increased network traffic and maintenance work because of a surge of viewers</p>
+                    </div>
+                </div>
+                <ul class="list-unstyled politics">
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Afghanistan on verge of socio-economic collapse: top EU diplomat</a></li>
+                    <li class="border-bottom border-2 py-2"><a class="text-decoration-none p-0" href="#">Britney Spears's father suspended from conservatorship</a></li>
+                    </ul>
+            </div><!--col-md-5-->
+        </div><!--row-->
+    </div>
+</section>
+<section class="newsletter py-5">
+    <div class="container">
+        <div class="row border-top border-4 pt-4">
+            <h2>Sign-up for Newsletter</h2>
+            <div class="col-sm-6 col-lg-3 py-4">
+                <input type="emali" placeholder="Email" class="py-2 form-control fw-normal">
+            </div><!--col-md-3-->
+            <div class="col-sm-6 col-lg-3 py-4">
+                <div class="d-grid">
+                    <button class="btn register py-2 form-control text-white fw-normal" type="button">register</button>
+                  </div>
+            </div><!--col-md-3-->
+            <div class="col-sm-6 col-lg-3 py-4">
+                <div class="btn-group border-right-fb facebook d-flex align-items-center justify-content-center p-1 rounded">
+                    <img class="" src="img/icon_facebook.png" alt="f">
+                    <button type="button" class="text-white btn fw-normal ms-1">connect with facebook</button>
+                </div>
+            </div><!--col-md-3-->
+            <div class="col-sm-6 col-lg-3 py-4">
+                <div class="btn-group border-right-g google facebook-group d-flex align-items-center justify-content-center p-1 rounded">
+                    <img class="" src="img/icon_google.png" alt="g">
+                    <button type="button" class="text-white btn fw-normal ms-1">connect with facebook</button>
+                </div>
+            </div><!--col-md-3-->
+        </div><!--row-->
+        <div class="row popular border-bottom border-4 pb-2">
+            <p class="fw-bold bg-black text-white m-0">POPULAR SEARCHES ON bdnews24 classifieds</p>
+            <div class="col-md-3 col-sm-6">
+                <div class="visited-links">
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Jobs in barisal</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Toyota allien for sale</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Jobs in barisal</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Jobs in Narayanganj</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Lorem ipsum dolor sit amet consectetur.</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Toyota for sale in Dhaka</a>
+                </div>
+            </div><!--col-md-3-->
+            <div class="col-md-3 col-sm-6">
+                <div class="visited-links">
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Jobs in barisal</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Toyota allien for sale</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Jobs in barisal</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Jobs in Narayanganj</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Lorem, ipsum dolor sit amet Lorem, ipsum. Harum.</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Toyota for sale in Dhaka</a>
+                </div>
+            </div><!--col-md-3-->
+            <div class="col-md-3 col-sm-6">
+                <div class="visited-links">
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Jobs in barisal</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Toyota allien for sale</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Jobs in barisal</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Jobs in Narayanganj</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Toyota for sale in Dhaka</a>
+                </div>
+            </div><!--col-md-3-->
+            <div class="col-md-3 col-sm-6">
+                <div class="visited-links">
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Jobs in barisal</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Toyota allien for sale</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Jobs in barisal</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Jobs in Narayanganj</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Property for sale in Dhaka</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis!</a>
+                    <a href="#" class="text-black text-decoration-none d-block px-0 py-1">Toyota for sale in Dhaka</a>
+                </div>
+            </div><!--col-md-3-->
+        </div><!--row-->
+        <div class="row footer-menu py-4 px-0 border-bottom">
+            <div class="footer-menu-logo d-flex justify-content-between">
+                <img src="img/footer-logo.png" class="p-0 d-none d-lg-block" alt="bdnews24.com">
+                <ul class="list-unstyled d-flex flex-wrap m-0">
+                    <li class="mx-3"><a class="p-0 text-uppercase text-black fw-bold" href="#">disclaimer & privacy policy</a></li>
+                    <li class="mx-3"><a class="p-0 text-uppercase text-black fw-bold" href="#">about us</a></li>
+                    <li class="mx-3"><a class="p-0 text-uppercase text-black fw-bold" href="#">contact us</a></li>
+                    <li class="mx-3"><a class="p-0 text-uppercase text-black fw-bold" href="#">Advertisement</a></li>
+                    <li class="mx-3"><a class="p-0 text-uppercase text-black fw-bold" href="#">subscription</a></li>
+                </ul>
+            </div>
+        </div><!--row and footer menu-->
+    </div>
+</section>
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="footer-content p-4">
+                <div class="footer-news d-flex flex-wrap">
+                    <div class="news">
+                        <h6 class="text-white ps-2 m-0 ms-2 flex-two footer-title">News</h6>
+                        <a href="#" class="py-1 text-capitalize d-block text-white mt-4">Home</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">bangladesh</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">business</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">politics</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">economy</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">technology</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">scienc</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">environment</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">health</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">entertainment</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">lifestyle</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">aviation</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">people</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">neighbour</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">wildlife</a>
+                    </div>
+                    <div class="news">
+                        <h6 class="text-white ps-2 m-0 ms-2 footer-title">Features</h6>
+                        <a href="#" class="py-1 text-capitalize d-block text-white mt-4">education</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">fashion</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">agriculture</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">atuomobile</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">film</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">technology</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">campus</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">environment</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">telivision & tourism</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">entertainment</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">classified</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">aviation</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">property</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">neighbour</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">wildlife</a>
+                    </div>
+                    <div class="news">
+                        <h6 class="text-white ps-2 m-0 ms-2 footer-title">Op/Ed</h6>
+                        <a href="#" class="py-1 text-capitalize d-block text-white mt-4">tech</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">fashion</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">lifestyle</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">giltx</a>
+                    </div>
+                    <div class="news">
+                        <h6 class="text-white ps-2 m-0 ms-2 footer-title">Sports</h6>
+                        <a href="#" class="py-1 text-capitalize d-block text-white mt-4">education</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">fashion</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">agriculture</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">atuomobile</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">film</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">technology</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">campus</a>
+                    </div>
+                    <div class="news">
+                        <h6 class="text-white ps-2 m-0 ms-2 footer-title">Blog</h6>
+                        <a href="#" class="py-1 text-capitalize d-block text-white mt-4">cricket</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">fashion</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">agriculture</a>
+                    </div>
+                    <div class="news">
+                        <h6 class="text-white ps-2 m-0 ms-2 footer-title">Social</h6>
+                        <a href="#" class="py-1 text-capitalize d-block text-white mt-4">education</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">fashion</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">agriculture</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">atuomobile</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">film</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">technology</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">campus</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">environment</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">telivision & tourism</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">entertainment</a>
+                    </div>
+                    <div class="news">
+                        <h6 class="text-white ps-2 m-0 ms-2 footer-title">education</h6>
+                        <a href="#" class="py-1 text-capitalize d-block text-white mt-4">education</a>
+                    </div>
+                    
+                    <div class="news">
+                        <h6 class="text-white ps-2 m-0 ms-2 footer-title">More</h6>
+                        <a href="#" class="py-1 text-capitalize d-block text-white mt-4">education</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">fashion</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">agriculture</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">atuomobile</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">film</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">technology</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">campus</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">environment</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">telivision & tourism</a>
+                        <a href="#" class="py-1 text-capitalize d-block text-white">entertainment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+<!-- tiny slider sj cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+
+<!-- custom js -->
+<script src="js/custom.js"></script>
+</body>
+</html>

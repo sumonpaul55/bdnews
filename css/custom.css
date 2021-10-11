@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 66.66%;
+    font-family: 'BenchNine', sans-serif;
+}
+/* ---------------------------------------------------------------- */
+                        /*   reusable css */
+/* ------------------------------------------------------------------ */
+/* .sticky{
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 8px 8px 16px gray;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 9999;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+} */
+
+hr{
+    border-top: 5px solid gray;
+}
+a{
+    font-size: 1.5rem;
+    padding: 0 .8rem !important;
+    color: black;
+}
+a:hover{
+    color: #e70707 !important;
+}
+nav a:not(.navbar-brand):hover{
+    background-color: #d1cfcf;
+}
+h4 a:hover{
+    color: white !important;
+}
+li{
+    font-size: 1.5rem;
+}
+.menubar:hover{
+    color: red;
+    cursor: pointer;
+}
+.fa-search{
+    background: #141e3b;
+}
+/* logo part */
+.logo-part .mail{
+    background: #0c7abf;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.logo-part .mail:hover{
+    background: #0b649b;
+}
+.logo-part .fab, .logo-part .far{
+    font-size: 1.8rem;
+}
+
+.logo-part .fa-facebook-f{
+    background-color: #3b5998;
+}
+.logo-part .fa-youtube{
+    background-color: #e02f2f;
+}
+
+.logo-part .fa-youtube::after{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: rgb(206, 206, 206);
+    position: absolute;
+    top:0;
+    right: -35%;
+}
+.logo-part .fa-bell{
+    background-color: #dc143c;
+}
+.logo-part-btn{
+    background-color: #1b1464;
+    font-size: 1.4rem;
+}
+.logo-part .current-date{
+    font-size: 1.5rem;
+
+}
+/* latest part */
+.latest-part .custom-border{
+    border-top-width: 4px !important;
+    border-bottom-width: 1px !important;
+}
+.latest{
+    background-color: #222b46;
+    font-size: 1.2rem;
+}
+/* news content section */
+.news-content h1 a{
+    font-size: 2.8rem !important;
+}
+small{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    display: block;
+    padding: 1rem 0;
+}
+.news-content .more-news a,
+.other-stories a{
+    line-height: 1 !important;
+    padding: 0 !important;
+    font-size: 1.2rem !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.col-title{
+    background: #222b46;
+}
+.more-stories-btn{
+    font-size: 1.6rem !important;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.more-stories-btn:hover{
+    color: red;
+}
+.fa-angle-double-right{
+    font-size: 1rem;
+    color: red;
+}
+/* spotlight */
+.spotlight a{
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+.spotlight .custom-btn{
+    font-size: 1.3rem;
+    background: #222b46;
+}
+.spotlight .custom-btn:hover{
+    background: #f0f0f0;
+    color: #292929 !important;
+    border: 1px solid black;
+}
+
+/*============================== othe news============================ */
+.custom-border{
+    border-right: 1px dotted gray;
+}
+.other-news .other-news-main-content a{
+    font-size: 1.8rem !important;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.other-news .other-news-main-content p{
+    font-size: 1.4rem !important;
+    font-family: Arial, Helvetica, sans-serif;
+}   
+/* tab section  */
+.tab-div button{
+    background: #7a7a7d !important;
+    font-size: 1.2rem;
+}
+.tab-div .active{
+    background: #202d52 !important;
+}
+.tab-content{
+    background: #ebebec;
+}
+.tab-content .tab-pane ul li{
+    border-bottom: 1px solid #c3c3c8 !important;
+}
+.tab-content .tab-pane ul li a{
+    color: #202d52;
+    font-family: Helvetica;
+    font-size: 14px!important;
+    line-height: 1.2;
+}
+.tab-content .tab-pane ul li a:hover{
+    color: red;
+}
+/* more gallery */
+.more-gallery .gallery-content{
+    background: #ebebec;
+}
+.more-gallery .gallery-content a{
+    font-family: Helvetica;
+    line-height: 1;
+}
+.more-gallery .gallery-content div{
+    width: 25%;
+}
+/* ====================================== politics============================= */
+.politics p{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.news li{
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.news li a,
+.politics li a{
+    list-style-type: disc;
+    color: #202D52;
+    font-family: Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 5px;
+}
+/* ============================= newsletter========================== */
+.newsletter button,
+.newsletter input{
+    font-size: 1.6rem;
+}
+.newsletter .register{
+    background: #5bc0de;
+    border-color: #31b0d5;
+}
+.newsletter .register:hover{
+    background: #31b0d5;
+    border-color: #31b0d5 !important;
+}
+.register:focus{
+    outline: 2px solid black !important;
+    background: #31b0d5 !important;
+}
+.facebook{
+    background: #5B7BD5;
+}
+.facebook:hover{
+    background: #4C69BA !important;
+}
+.facebook .fab{
+    font-size: 2rem;
+}
+ .border-right-fb::after,
+ .border-right-g::after{
+    content: "";
+    border-right: 1px solid #364e92;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 86%;
+}
+.google{
+    background: #DD4B39;
+}
+.border-right-g::after{
+    border-color: #b84444f1;
+}
+.border-right-g:hover{
+    background: #f0604d;
+}
+.popular p{
+    font-size: 1.3rem;
+}
+.visited-links a{
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.warning{
+    background: #f8f8ff;
+}
+/* ===================================== post page============================ */
+.pagination ul li a{
+    color: #848484;
+}
+.pagination ul li::after{
+    content: ">";
+    color: #848484;
+}
+.pagination ul li:last-child::after{
+    display: none;
+}
+
+.pagination .share-facebook span{
+    color: #4e71a8 !important; 
+    cursor: pointer;
+}
+.pagination .share-facebook .fab{
+    color: white;
+    font-size: 1.5rem;
+}
+.pagination .share-facebook span:last-child{
+    color: white;
+    background: #4e71a8;
+    width: 35px;
+    height: 35px;
+}
+/* ============================== post page========================== */
+.post .post-head-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem !important;
+    line-height: 1.2;
+    color: #29292a;
+}
+.post .post-head-details span{
+    color: #666;
+    font-size: 1.2rem;
+}
+.post .post-body .post-about{
+    font-size: 1.3rem;
+    color: #6d6d6d !important;
+}
+.post .post-body h5{
+    font: bold 14px Arial,Verdana,Helvetica,sans-serif;
+    line-height: 1.3;
+    margin: 0 0 15px;
+    padding: 0;
+}
+.post .post-body .post-status P{
+    font-size: 14px;
+    line-height: 19px;
+    color: #151515;
+    font-family: arial,sans-serif;
+}
+
+.post .recent-stories-title{
+    border-color: #222b46 !important;
+}
+.post .recent .item-news{
+    width: 47% !important;
+}
+.post .recent-stories-title h3{
+    font-size: 16px;
+    font-family: sans-serif,Helvetica;
+    border: none;
+    background: #222B46;
+    color: #fff;
+    padding: 5px 7px 2px 10px;
+    margin-bottom: -1px !important;
+}
+
+.post .recent .stories-content{
+    background: #ebebec;
+}
+.stories-content a h6{
+    line-height: 1.4 !important;
+    font-size: 1.2rem !important;
+}
+/* -------------------------------more stories--------------------------------- */
+.more-stories{
+    background: #ebebec;
+}
+.more-stories .item-news{
+    width: 23% !important;
+    margin: .5rem;
+}
+.most-read ul{
+    background: #ebebec;
+}
+
+.most-read ul li a{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.most-read ul li{
+    border-color: #bdbdbd !important;
+}
+.most-read .most-read-title{
+    background: #222b46;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.more-from-section{
+    font-size: 1.6rem;
+    color: #202D52;
+}
+.warning h6{
+    font-family: Arial;
+    font-size: 9pt;
+    color: #FF9900;
+}
+.warning p{
+font-family: Arial;
+font-size: 9pt;
+color: #275572;
+}
+/* =========================footer-menu===================== */
+.footer-menu ul li a{
+    font-size: 1rem;
+}
+.footer-menu ul li{
+    position: relative;
+}
+.footer-menu ul li::after{
+    content: "|";
+    position: absolute;
+    right: -15px;
+    top: 0;
+}
+.footer-menu ul li:last-child::after{
+    display: none;
+}
+/* ================================ footer ============================= */
+.footer-section{
+    background: #222b46;
+}
+.footer-section .footer-title{
+    font-size: 2rem;
+}
+.footer-section .news{
+    width: 12.5%;
+}
+/* ========================= responsive============================ */
+@media screen and (max-width: 991px){
+    nav .navbar-toggler{
+        position: absolute;
+        right: 2%;
+        top: 4%;
+    }
+    nav ul .border-end{
+        border-right: 0 !important;
+    }
+    nav .inside-bar{
+        max-width: 20%;
+    }
+    .footer-section .news{
+        width: 25% !important;
+    }
+}
+/* ======================== max-width 767========================================== */
+@media screen and (max-width: 767px){
+    .logo-part img{
+        max-width: 40% !important;
+    }
+    .logo-part .logo-part-btn{
+        margin-top: .2rem !important;
+    }
+}
+@media screen and (max-width: 575px){
+    .more-gallery .gallery-content{
+        display: block !important;
+    }
+    .more-gallery .gallery-content div,
+    .more-gallery .gallery-content img{
+        width: 100% !important;
+        height: auto !important;
+        margin: 1rem 0 !important;
+    }
+    .footer-section .news{
+        width: 50% !important;
+    }
+}
+
+
+
+
+
+
+
+
